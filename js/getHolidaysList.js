@@ -1,7 +1,9 @@
 const elHolidayList = document.getElementById('holiday-list');
 
 getHolidaysList = async () => {
-    const holidays = await fetch('http://localhost:3000/holidays');
+    console.log(location);
+    
+    const holidays = await fetch(`https://holidayvs-backend.herokuapp.com/holidays`);
     const holidaysArray = await holidays.json();
     
     holidaysArray.forEach((element, index) => {
