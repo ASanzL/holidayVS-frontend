@@ -7,7 +7,7 @@ const elHolidayButton2 = document.getElementById('holiday-button-2');
 const elSkipVoteButton = document.getElementById('skip-vote');
 
 getTwoHolidays = async () => {
-    const holidays = await fetch(location.hostname === '' ? 'http://localhost:3000/match' : `https://holidayvs-backend.herokuapp.com/match`');
+    const holidays = await fetch(location.hostname === '' ? 'http://localhost:3000/match' : `https://holidayvs-backend.herokuapp.com/match`);
     const holidaysArray = await holidays.json();
     
     elHolidayName1.innerHTML = holidaysArray.holiday1.name;
