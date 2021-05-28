@@ -21,13 +21,13 @@ nav ul li {
   color: #212020;
   list-style-type: none;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 24px;
+  font-size: 45px;
   font-weight: bold;
 }
 nav ul li a {
   display: block;
   color: #042538;
-  padding: 20 40 20 40;
+  padding: 40 80;
   text-decoration: none;
   border-top: 0px solid #FECC00;
 }
@@ -73,25 +73,18 @@ ol#holiday-list li div {
   background-color: #FECC00;
   width: auto;
   display: block;
-  padding: 6px;
 }
 a.holiday, a.holiday:visited {
   display: block;
   width: auto;
-  margin: 0px;
+  margin-top: 10px;
   text-decoration: none;
   color: #000;
-  transition: box-shadow 0.4s, border 0.5s, border-radius 0.5s, transform 0.5s;
   overflow: hidden;
-
-}
-a.holiday:hover {
-  box-shadow: 2px 2px 4px #000;
-  border-color: #014a75;
 }
 #vote-box a .holiday-name {
-  padding: 3px;
-  font-size: 30px;
+  padding: 15px;
+  font-size: 50px;
   text-align: center;
   text-transform: uppercase;
   background-color: #006AA7;
@@ -104,38 +97,59 @@ a.holiday:hover {
   box-shadow: inset 1px 1px 15px #000;
 }
 #vote-box a #holiday-vote {
-  padding: 3px;
-  font-size: 20px;
+  padding: 10px;
+  font-size: 35px;
   text-align: center;
   text-transform: uppercase;
   background-color: #006AA7;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #skip-vote {
+  margin-top: 10px;
   display: block;
   color: #d4d3d3;
   background-color: #5d5d5d;
   grid-column: 1 / 3;
   text-align: center;
-  font-size: 18px;
+  font-size: 50px;
   text-decoration: none;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding: 2px;
+  padding: 15px;
 }
 #skip-vote:hover {
   text-decoration: underline;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
+  nav ul li {
+    font-size: 24px;
+  }
+  nav ul li a {
+    padding: 20 40;
+  }
+  #vote-box a .holiday-name {
+    padding: 3px;
+    font-size: 30px;
+  }
+  #vote-box a #holiday-vote {
+    padding: 3px;
+    font-size: 20px;
+  }
+  #skip-vote {
+    margin-top: 0px;
+    padding: 3px;
+    font-size: 20px;
+  }
   ol#holiday-list {
     width: 800px;
   }
   #vote-box {
     margin: 20 auto;
-    display: grid;
     width: 1250px;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
+    padding: 6px;
   }
   a.holiday {
     width: 100%;
